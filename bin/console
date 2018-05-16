@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'rfc3987'
+require 'pry'
+require 'treetop'
+
+Pry.start
