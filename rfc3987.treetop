@@ -48,7 +48,7 @@ grammar RFC3987
   end
 
   rule ipath_abempty
-    ( '/' isegment)*
+    ( '/' isegment )*
   end
 
   rule ipath_absolute
@@ -56,7 +56,7 @@ grammar RFC3987
   end
 
   rule ipath_noscheme
-    isegment_nz_nc ( '/' isegment)*
+    isegment_nz_nc ( '/' isegment )*
   end
 
   rule ipath_rootless
@@ -154,9 +154,9 @@ grammar RFC3987
   end
 
   rule dec_octet
-      DIGIT                 # 0-9
+      DIGIT                     # 0-9
     / ['0x30'-'0x39'] DIGIT     # 10-99
-    / "1" DIGIT 2..2        # 100-199
+    / "1" DIGIT 2..2            # 100-199
     / "2" ['0x30'-'0x34'] DIGIT # 200-249
     / "25" ['0x30'-'0x35']      # 250-255
   end
@@ -192,5 +192,4 @@ grammar RFC3987
   rule HEXDIG
     [0-9A-F]
   end
-
 end
