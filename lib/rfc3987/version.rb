@@ -1,3 +1,3 @@
-module Rfc3987
+module RFC3987
   VERSION = "0.1.0"
 end
